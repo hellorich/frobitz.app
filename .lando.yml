@@ -1,0 +1,51 @@
+name: frobitz-app
+recipe: wordpress
+config:
+  php: "8.4"
+  composer_version: "2"
+  via: "nginx"
+  webroot: web
+  database: "mariadb:11.4"
+  xdebug: true
+
+services:
+  appserver:
+    run:
+      - |
+        mkdir -p /app/web/wp # In case I'm doing a rebuild
+        composer install
+        sleep 3
+        wp --path=/app/web/wp core download # For a rebuild
+        wp --path=/app/web/wp core install --title="Learn Lando Bedrock" --url="https://frobitz-app.lndo.site/wp" --admin_user=admin --admin_password=password --admin_email=frobitz@gmail.com
+        wp --path=/app/web/wp option update siteurl https://frobitz-app.lndo.site
+    overrides:
+      environment:
+        COMPOSER_CACHE_DIR: "/app/.cache/composer" # Saves a lot of time you need to rebuild
+        WP_CLI_CACHE_DIR: "/app/.cache/wp-cli" # Saves a lot of space
+    sslExpose: false # To avoid port scanning issues at startup https://docs.lando.dev/core/v3/proxy.html#using-https
+  redis:
+    type: redis
+  mail:
+    type: mailhog
+    hogfrom:
+      - appserver
+    ssl: true
+    sslExpose: false # To avoid port scanning issues at startup https://docs.lando.dev/core/v3/proxy.html#using-https
+  node:
+    type: node:22
+    run:
+      - npm config set cache /app/.cache/npm
+    command: tail -f /dev/null # Keep it running for faster command execution
+
+proxy:
+  mail:
+    - frobitz-app-mail.lndo.site
+
+tooling:
+  wp:
+    service: appserver
+    dir: /app/web
+  npm:
+    service: node
+  npx:
+    service: node
