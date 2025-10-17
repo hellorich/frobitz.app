@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "115967dbe88490a741f31afb62420867",
+    "content-hash": "92c0185ab3ee885cd804f903aced279a",
     "packages": [
         {
             "name": "composer/installers",
@@ -1049,6 +1049,42 @@
                 "source": "https://gitlab.com/wordpress-premium/advanced-custom-fields-pro/-/tree/v6.5.1"
             },
             "time": "2025-09-29T04:02:27+00:00"
+        },
+        {
+            "name": "wpackagist-plugin/limit-login-attempts-reloaded",
+            "version": "2.26.23",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/limit-login-attempts-reloaded/",
+                "reference": "tags/2.26.23"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/limit-login-attempts-reloaded.2.26.23.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/limit-login-attempts-reloaded/"
+        },
+        {
+            "name": "wpackagist-plugin/spinupwp",
+            "version": "1.9.0",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/spinupwp/",
+                "reference": "tags/1.9.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/spinupwp.1.9.0.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/spinupwp/"
         },
         {
             "name": "wpackagist-theme/twentytwentyfive",
