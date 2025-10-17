@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "dcdf039bf790ac43d4fb37acabd544dc",
+    "content-hash": "115967dbe88490a741f31afb62420867",
     "packages": [
         {
             "name": "composer/installers",
@@ -1013,6 +1013,42 @@
                 }
             ],
             "time": "2025-04-30T23:37:27+00:00"
+        },
+        {
+            "name": "wordpress-premium/advanced-custom-fields-pro",
+            "version": "v6.5.1",
+            "source": {
+                "type": "git",
+                "url": "https://gitlab.com/wordpress-premium/advanced-custom-fields-pro.git",
+                "reference": "f91a4522cda5cfb1c2b0356337068e380aa2fd1b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://gitlab.com/api/v4/projects/wordpress-premium%2Fadvanced-custom-fields-pro/repository/archive.zip?sha=f91a4522cda5cfb1c2b0356337068e380aa2fd1b",
+                "reference": "f91a4522cda5cfb1c2b0356337068e380aa2fd1b",
+                "shasum": ""
+            },
+            "type": "wordpress-plugin",
+            "autoload": {
+                "psr-4": {
+                    "ACF\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "WP Engine"
+                }
+            ],
+            "description": "Advanced Custom Fields",
+            "support": {
+                "issues": "https://gitlab.com/wordpress-premium/advanced-custom-fields-pro/-/issues",
+                "source": "https://gitlab.com/wordpress-premium/advanced-custom-fields-pro/-/tree/v6.5.1"
+            },
+            "time": "2025-09-29T04:02:27+00:00"
         },
         {
             "name": "wpackagist-theme/twentytwentyfive",
