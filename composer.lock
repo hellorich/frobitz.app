@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bbda3656acbed0852379601a3989c53e",
+    "content-hash": "db975fdad2e0c2a8526547b6ef120e92",
     "packages": [
         {
             "name": "composer/installers",
@@ -1051,6 +1051,24 @@
             "time": "2025-09-29T04:02:27+00:00"
         },
         {
+            "name": "wpackagist-plugin/add-wpgraphql-seo",
+            "version": "v5.0.0",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/add-wpgraphql-seo/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/add-wpgraphql-seo.zip?timestamp=1758288027"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/add-wpgraphql-seo/"
+        },
+        {
             "name": "wpackagist-plugin/limit-login-attempts-reloaded",
             "version": "2.26.23",
             "source": {
@@ -1085,6 +1103,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/spinupwp/"
+        },
+        {
+            "name": "wpackagist-plugin/wordpress-seo",
+            "version": "26.1.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
+                "reference": "tags/26.1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.26.1.1.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wordpress-seo/"
         },
         {
             "name": "wpackagist-plugin/wp-graphql",

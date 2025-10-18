@@ -45,7 +45,9 @@
     "wpackagist-plugin/limit-login-attempts-reloaded": "^2.26",
     "wpackagist-plugin/wp-graphql": "^2.3",
     "wpackagist-plugin/wpgraphql-acf": "^2.4",
-    "wpackagist-plugin/wpgraphql-blocks": "^2.2"
+    "wpackagist-plugin/wpgraphql-blocks": "^2.2",
+    "wpackagist-plugin/wordpress-seo": "^26.1",
+    "wpackagist-plugin/add-wpgraphql-seo": "^5.0"
   },
   "require-dev": {
     "roave/security-advisories": "dev-latest",
