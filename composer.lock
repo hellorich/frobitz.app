@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5d3097fe95c6f963b5ac70e0d05e4b5b",
+    "content-hash": "bbda3656acbed0852379601a3989c53e",
     "packages": [
         {
             "name": "composer/installers",
@@ -1121,6 +1121,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/wpgraphql-acf/"
+        },
+        {
+            "name": "wpackagist-plugin/wpgraphql-blocks",
+            "version": "2.2.0",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wpgraphql-blocks/",
+                "reference": "tags/2.2.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wpgraphql-blocks.2.2.0.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wpgraphql-blocks/"
         },
         {
             "name": "wpackagist-theme/twentytwentyfive",
