@@ -42,7 +42,9 @@
     "wpackagist-theme/twentytwentyfive": "^1.0",
     "wordpress-premium/advanced-custom-fields-pro": "^6.5",
     "wpackagist-plugin/spinupwp": "^1.9",
-    "wpackagist-plugin/limit-login-attempts-reloaded": "^2.26"
+    "wpackagist-plugin/limit-login-attempts-reloaded": "^2.26",
+    "wpackagist-plugin/wp-graphql": "^2.3",
+    "wpackagist-plugin/wpgraphql-acf": "^2.4"
   },
   "require-dev": {
     "roave/security-advisories": "dev-latest",
